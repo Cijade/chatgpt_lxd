@@ -15,15 +15,15 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QGraphicsView, QLabel, QMainWindow,
-    QMenuBar, QPushButton, QSizePolicy, QStatusBar,
-    QTextEdit, QWidget)
+from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QMenuBar,
+    QPushButton, QSizePolicy, QStatusBar, QTextEdit,
+    QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(810, 815)
+        MainWindow.resize(803, 815)
         icon = QIcon()
         icon.addFile(u"lxd.jpg", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -48,24 +48,13 @@ class Ui_MainWindow(object):
         self.pushButton_2 = QPushButton(self.centralwidget)
         self.pushButton_2.setObjectName(u"pushButton_2")
         self.pushButton_2.setGeometry(QRect(490, 730, 81, 31))
-        self.graphicsView = QGraphicsView(self.centralwidget)
-        self.graphicsView.setObjectName(u"graphicsView")
-        self.graphicsView.setGeometry(QRect(830, 0, 861, 691))
         self.keylabel = QLabel(self.centralwidget)
         self.keylabel.setObjectName(u"keylabel")
         self.keylabel.setGeometry(QRect(90, 700, 581, 21))
         MainWindow.setCentralWidget(self.centralwidget)
-        self.graphicsView.raise_()
-        self.sendButton.raise_()
-        self.textEdit.raise_()
-        self.sendtextEdit.raise_()
-        self.textEdit_3.raise_()
-        self.clearButton.raise_()
-        self.pushButton_2.raise_()
-        self.keylabel.raise_()
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 810, 23))
+        self.menubar.setGeometry(QRect(0, 0, 803, 23))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
