@@ -22,9 +22,11 @@ class MyWindow(QMainWindow):
         if inputtext != "":
             
             outputtext = self.chatgpt.askgpt(inputtext)
+
             self.ui.textEdit.append('-------------------------------------------------')
             self.ui.textEdit.append(outputtext)
         
+
     def btnclearclick(self):
         self.ui.textEdit.clear()
 

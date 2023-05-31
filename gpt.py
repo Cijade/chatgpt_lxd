@@ -5,7 +5,7 @@ import json
 
 
 
-defaultkey = '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'
+defaultkey = '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'
 
 class GPT():
 
@@ -29,9 +29,11 @@ class GPT():
 
         response = requests.post(url, headers=headers, data=json.dumps(data))
         response = response.json()
-        text = response['choices'][0]['message']['content']
-        
+        print(response)
+        if 'choices' in response:
+            text = response['choices'][0]['message']['content']
+        else:
+            text = response['error']['code']
         return text
-
     def getkey(self):
         return defaultkey
