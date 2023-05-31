@@ -1,0 +1,2 @@
+pyside6写的调用chatgpt api的一个桌面程序
+提供一个默认的api key
