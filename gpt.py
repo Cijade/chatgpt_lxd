@@ -5,7 +5,7 @@ import json
 
 
 
-defaultkey = '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'
+defaultkey = ''
 
 class GPT():
 
